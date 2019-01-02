@@ -33,8 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IntelliMail.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\IntelliMail.Data.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\..\..\..\git\Sendible.Services\SubSonic\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sendible.Common.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Sendible.Common.Logger.dll</HintPath>
     </Reference>
     <Reference Include="SubSonic">
       <HintPath>..\..\..\..\..\..\..\git\Sendible.Services\SubSonic\bin\Debug\SubSonic.dll</HintPath>
@@ -59,12 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\git\Sendible.Services\IntelliMail.Data\IntelliMail.Data.csproj">
-      <Project>{e8334452-52a1-429b-aca8-67ebecece4c0}</Project>
-      <Name>IntelliMail.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
